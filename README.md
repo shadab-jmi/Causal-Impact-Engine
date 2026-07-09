@@ -31,7 +31,7 @@ statistically significant, profitable lift:
 
 ## 🚀 Live demo
 
-**[▶ Interactive dashboard](#)** — *deployment link coming soon (Streamlit Community Cloud).*
+**[▶ Interactive dashboard](https://causal-impact-engine.streamlit.app/)**
 Plan an experiment's power, watch a naïve estimate drift as bias is dialed up while PSM/IPW hold the
 truth, and explore the profit of targeting the top *X%* of customers by predicted uplift. You can also
 **score a single hypothetical customer** — enter one profile and get their personal predicted uplift, a
