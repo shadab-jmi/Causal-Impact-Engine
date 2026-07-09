@@ -1,0 +1,29 @@
+# Base theme for the dashboard. Colours here are the ground truth for anything Streamlit can theme
+# natively (backgrounds, primary/accent, text). Anything config.toml can't reach — metric cards,
+# tab numbering, slider tracks, spacing rhythm — is handled by the single CSS block in
+# app/streamlit_app.py. Chart styling lives in src/viz.py. Keep the three in sync.
+
+[theme]
+base = "dark"
+
+# Layered dark backgrounds (base -> surface), not pure black.
+backgroundColor = "#0E1117"          # app canvas (base)
+secondaryBackgroundColor = "#161A23" # sidebar / inputs / code (surface)
+
+# One deliberate accent — a restrained periwinkle blue for interactive elements & tab highlights.
+primaryColor = "#5A8DEE"
+linkColor = "#5A8DEE"
+
+# Text: bright-but-soft primary, never pure white.
+textColor = "#DEE3EC"
+
+# Rounded, lightly-bordered widgets to match the card language.
+baseRadius = "0.6rem"
+borderColor = "#2A3040"
+showWidgetBorder = true
+
+font = "sans-serif"
+
+[client]
+# Hide the platform chrome (deploy button / hamburger toolbar) so the app reads as a product.
+toolbarMode = "minimal"
